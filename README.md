@@ -1,4 +1,4 @@
-# AgileSphere test
+# Fimatix test
 
 Using the Free open weather map api (http://openweathermap.org/forecast5 api key has been included inside weather.service.ts)
 
