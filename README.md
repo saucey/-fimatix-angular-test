@@ -6,13 +6,13 @@ Using the Free open weather map api (http://openweathermap.org/forecast5 api key
 * Every time a new city is searched - Add to a table of cities displaying the next 24 hours weather forecast.
 * Build the application using ng-rx
 
-We have provided a skeleton application  generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+We have provided a skeleton application  generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
 ## Expectations
 
 * Complete the components(search, results and the weather container)
 * Complete the Weather.service.ts, using the API provided by the openweathermap for a given city
-* Complete the unit test files (*.spec.ts).
-* Complete the End to End test using Protractor.
+* Complete the unit test files (*.spec.ts). Some test files haven't been provided. Feel free to add tests for selectors and reducers or anything which is worth testing.
+* Complete the End to End test using Protractor or Cypress.
 * Intrfaces have been provided in model/weather.ts. Please use these interfaces.
 * An example layout table is provided inside the results component.Please use this as template.
 * We expect the application to compile and all the tests to pass.
