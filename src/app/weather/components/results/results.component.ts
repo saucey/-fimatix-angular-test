@@ -1,15 +1,12 @@
-import { Component, OnChanges } from '@angular/core';
+import { Component, Input, OnInit } from "@angular/core";
+import { Observable } from "rxjs";
+import { Weather } from "src/app/model/weather";
 
 @Component({
-  selector: 'app-results',
-  templateUrl: './results.component.html'
+  selector: "app-results",
+  templateUrl: "./results.component.html",
 })
-export class ResultsComponent implements OnChanges {
-  constructor() { }
-
-  ngOnChanges() {
-    // IMPLEMENT ANYTHING YOU BEKIEVE YOU MIGHT NEED HERE
-  }
+export class ResultsComponent {
+  @Input() weatherLists$: Observable<Weather[]>;
+  constructor() {}
 }
-
-

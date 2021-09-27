@@ -1,16 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from "@angular/core";
+import { Store } from "@ngrx/store";
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html'
+  selector: "app-search",
+  templateUrl: "./search.component.html",
 })
 export class SearchComponent {
-  // IMPLEMENT ANY INPUT OR OUTPUT YOU MIGHT NEED
-
-  constructor() {
-  }
+  searchValue: string;
+  @Output() search$ = new EventEmitter<string>();
 
   search() {
-    // TO BE IMPLEMENTED
+    this.search$.next(this.searchValue);
   }
 }
